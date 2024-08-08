@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { AppNavbar } from './navbar/navbar.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, AppNavbar, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'Training';
+  imgUrl: string = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6a3JwynKKhblkrjpWw7HlHo18AooKWZELw&s';
+  isDisabled: boolean = false;
+  isActive: boolean = false;
 }
