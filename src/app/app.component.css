@@ -8,3 +8,17 @@
     background-color: black;
     color: white;
 }
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* or center or any alignment you need */
+  }
+
+img {
+    margin-bottom: 2%;
+}
+
+button {
+    margin-left: 5%;
+}

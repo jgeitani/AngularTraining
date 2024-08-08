@@ -8,11 +8,15 @@ import { HeaderComponent } from './header/header.component';
   standalone: true,
   imports: [RouterOutlet, AppNavbar, HeaderComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] // Corrected the property name
 })
 export class AppComponent {
   title = 'Training';
   imgUrl: string = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6a3JwynKKhblkrjpWw7HlHo18AooKWZELw&s';
   isDisabled: boolean = false;
   isActive: boolean = false;
+
+  changeStatus() {
+    this.isActive = !this.isActive;
+  }
 }
