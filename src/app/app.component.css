@@ -17,8 +17,11 @@ div {
 
 img {
     margin-bottom: 2%;
+    display: block;
+    margin-left: 600px;
+    
 }
 
 button {
-    margin-left: 5%;
+    margin-left: 720px;
 }

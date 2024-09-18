@@ -1,8 +1,10 @@
 <app-header></app-header>
 <h1>My First Angular App</h1>
 <app-navbar></app-navbar>
+<div style="background-color: aquamarine; margin-top: 20px;">
 <p> {{title}} </p>
 <div>
 <img [src]="imgUrl" alt="">
 <button [class.active]="isActive" [class.no-active]="!isActive" (click)="changeStatus()">Button</button>
+</div>
 </div>
